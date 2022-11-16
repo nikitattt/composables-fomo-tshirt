@@ -18,10 +18,10 @@
 pragma solidity ^0.8.6;
 
 interface IFomoNounsTShirtInitializer {
-    function initialize(
-        string memory _name,
-        string memory _symbol,
-        address _creator,
-        address _minter
-    ) external;
+  function initialize(
+    string memory _name,
+    string memory _symbol,
+    address _creator,
+    address _minter
+  ) external;
 }

@@ -28,18 +28,9 @@ interface ISVGRenderer {
         string background;
     }
 
-    function generateSVG(SVGParams memory params)
-        external
-        view
-        returns (string memory svg);
+    function generateSVG(SVGParams memory params) external view returns (string memory svg);
 
-    function generateSVGPart(Part memory part)
-        external
-        view
-        returns (string memory partialSVG);
+    function generateSVGPart(Part memory part) external view returns (string memory partialSVG);
 
-    function generateSVGParts(Part[] memory parts)
-        external
-        view
-        returns (string memory partialSVG);
+    function generateSVGParts(Part[] memory parts) external view returns (string memory partialSVG);
 }

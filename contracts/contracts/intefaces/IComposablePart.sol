@@ -17,11 +17,8 @@
 
 pragma solidity ^0.8.6;
 
-import {ISVGRenderer} from "./ISVGRenderer.sol";
+import { ISVGRenderer } from './ISVGRenderer.sol';
 
-interface IComposablePart {
-    function getPart(uint256 tokenId)
-        external
-        view
-        returns (ISVGRenderer.Part memory);
+interface IComposablePart {	
+    function getPart(uint256 tokenId) external view returns (ISVGRenderer.Part memory);
 }

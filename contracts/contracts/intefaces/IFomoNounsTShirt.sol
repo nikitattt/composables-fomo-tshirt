@@ -17,8 +17,8 @@
 
 pragma solidity ^0.8.6;
 
-import {IERC1155Upgradeable} from "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol";
-import {INounsAuctionHouse} from "./INounsAuctionHouse.sol";
+import { IERC1155Upgradeable } from '@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol';
+import { INounsAuctionHouse } from './INounsAuctionHouse.sol';
 
 interface IFomoNounsTShirt is IERC1155Upgradeable {
     event NounsAuctionHouseUpdated(INounsAuctionHouse nounsAuctionHouse);
@@ -31,8 +31,7 @@ interface IFomoNounsTShirt is IERC1155Upgradeable {
 
     error EmptyBytes();
 
-    function setNounsAuctionHouse(INounsAuctionHouse _nounsAuctionHouse)
-        external;
+    function setNounsAuctionHouse(INounsAuctionHouse _nounsAuctionHouse) external;
 
     function setAuctionTimePart(bytes calldata image) external;
 
