@@ -121,7 +121,7 @@ contract FomoNounsTShirt is ERC1155Upgradeable, IFomoNounsTShirtInitializer, IFo
     function _partByNounsAuctionState() internal view returns (ISVGRenderer.Part memory) {
         INounsAuctionHouse.Auction memory auction = nounsAuctionHouse.auction();
 
-        bytes memory image = block.timestamp >= auction.endTime ? auctionTimePart : fomoTimePart;
+        bytes memory image = block.timestamp >= auction.endTime ? fomoTimePart : auctionTimePart;
 
         return ISVGRenderer.Part({ image: image, palette: palette });
     }
